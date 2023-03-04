@@ -53,5 +53,7 @@ using (FileStream ofs = File.Create(outputFilepath))
 {
     ofs.Write(demoCab.Body);
 }
+File.SetCreationTime(outputFilepath, demoCab.TimeStamp.DateTime);
+File.SetLastWriteTime(outputFilepath, demoCab.TimeStamp.DateTime);
 
 Console.WriteLine("Done.");
