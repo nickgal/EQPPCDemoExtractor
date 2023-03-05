@@ -4,3 +4,5 @@ project = "EQPPCDemoExtractor.csproj"
 [github]
 user = "nickgal"
 repo = "EQPPCDemoExtractor"
+[nuget]
+publish = false
